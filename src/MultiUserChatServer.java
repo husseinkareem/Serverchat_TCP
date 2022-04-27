@@ -21,7 +21,7 @@ public class MultiUserChatServer extends Thread{
                 BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         ) {
             String inputLine;
-            out.println("The client is online");
+            //out.println("The client is online");
             while ((inputLine = in.readLine()) != null) {
                 System.out.println("read from client " + inputLine);
                 for (MultiUserChatServer user: username) {
